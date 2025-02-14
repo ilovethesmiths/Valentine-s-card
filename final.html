@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <style>
+        body {
+            background-color: #ffdde1;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            background: white;
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .corner-image {
+                position: absolute;
+                bottom: -10px; /* Adjust for placement */
+                left: -50px; /* Adjust for placement */
+                width: 600; /* Adjust size */
+                opacity: 10; /* Make it slightly transparent */
+                z-index: 1; /* Ensures it's behind the card */
+        }
+
+        .stamp {
+            font-size: 50px;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .cupid {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Adjusts to float on the right side */
+            width: 200px; /* Adjust cupid size */
+            height: auto;
+            animation: floatCupid 3s infinite ease-in-out;
+        }
+
+        
+        @keyframes floatCupid {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            color: #ff4d6d;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="stamp"> <a class="stamp" href="message.html"> <img src="C:\Users\adi_t\Downloads\1885a64ddb34039adc17b4b3e7462f71-removebg-preview.png"  alt="Beating Heart" style="width: 70px; height: auto;"> </a> </div>
+        <h1>Happy Valentine's Day! 💖</h1>
+        <p>Dear M,</p>
+        <p>
+            I may not have seen every star present in the sky, 
+            but I have seen the brightest one- you  💕
+        </p>
+        <p>With love,</p>
+        <h3>Xia 💘</h3>
+    </div>
+
+<img src="C:\Users\adi_t\Downloads\9d74bdc511ed57f04251ed2014bc8608-removebg-preview.png" alt="flying cupid" class="cupid">
+
+<img src="C:\Users\adi_t\Downloads\54f94ad52b9dcc8573888c891b0e89df-removebg-preview.png" alt="pink page" class="corner-image">
+</body>
+</html>
